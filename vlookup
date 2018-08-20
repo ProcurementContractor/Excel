@@ -1,0 +1,7 @@
+'語法：VLOOKUP(lookup_value, table_array, col_index_num, [range_lookup])
+'lookup_value：在表格或範圍的第一欄中搜尋的值。
+'table_array：包含資料的儲存格範圍。可以使用範圍的參照，也可以使用範圍名稱。
+'col_index_num：table_array 引數中必須傳回相符值的欄號。
+'可以用這種形式range(B:B)來表示第二個column。
+'range_lookup：這是一個邏輯值，用以指定VLOOKUP應該要尋找完全符合還是大約符合的值。
+example: =VLOOKUP($H$2,$A$2:$F$25,COLUMN(B:B))
