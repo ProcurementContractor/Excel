@@ -1,0 +1,10 @@
+MATCH
+'語法：MATCH(lookup_value, lookup_array, [match_type])
+'lookup_value：在 lookup_array 中尋找比對的值。
+'lookup_array：要搜尋的儲存格範圍。
+'match_type：這是一個數字，其值有三種可能：(預設值為 1)
+'1 或省略：找到等於或僅次於 lookup_value 的值。lookup_array 引數內的值必須以遞增次序排列。
+'0：找第一個完全等於 lookup_value 的比較值。lookup_array 引數內的值可以依任意次序排列。
+'-1：找到等於或大於 lookup_value 的最小值。lookup_array 引數內的值必須以遞減次序排序。
+=MATCH($H$2,學號,0)：使用 MATCH 函數，找到儲存格H2位於「學號」(此方法必須先定義儲存格名稱) 儲存格範圍中的第幾列。
+參數「0」為設定查詢學號必須完全一致者
